@@ -34,13 +34,20 @@ module.exports = function(app) {
     });
 
     app.put('/items/:id', function(req, res) {
-        temp_controller.findOneAndUpdate(req.params.id,req.body.count ).then(function(resp) {
+        temp_controller.findOneAndUpdate(req.params.id, req.body.count).then(function(resp) {
             res.send(resp);
-            console.log("hello world.",req.body.count);
         }).catch(function(err) {
             res.send("Error Occureddd...");
         })
     });
+
+    /*app.put("/items/:id/:qty/:types", function(req, res) {
+        temp_controller.updateData(req.params.id, req.params.qty, req.params.types).then(function(resp) {
+            res.send(resp);
+        }).catch(function(err) {
+            res.send(err);
+        })
+    });*/
 
 
 }

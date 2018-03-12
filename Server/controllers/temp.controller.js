@@ -19,3 +19,8 @@ exports.deleteOne = function(id) {
 exports.findOneAndUpdate=function(id,body){
 	return temp_controller.findOneAndUpdate(id,body);
 }
+
+/*exports.updateData = function(uid,qty,types)
+{
+return temp_controller.updateData(uid,qty,types);
+};*/
