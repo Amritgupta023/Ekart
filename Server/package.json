@@ -1,0 +1,20 @@
+{
+  "name": "shoppingserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amrit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.9",
+    "path": "^0.12.7",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
